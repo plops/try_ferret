@@ -14,7 +14,7 @@ java -jar ferret.jar -i lazy-sum.clj
 18:17:45 INFO compiled => ./lazy-sum.cpp
 18:17:45 INFO formatting code
 
-real	0m7.962s
+real	0m7.962s                    # on T460
 user	0m16.296s
 sys	0m0.471s
 #+end_example
