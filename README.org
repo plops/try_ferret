@@ -1,0 +1,21 @@
+
+#+begin_example
+curl -O https://ferret-lang.org/builds/ferret.jar
+#+end_example
+
+- the code generation is quite slow:
+
+#+begin_example
+java -jar ferret.jar -i lazy-sum.clj
+
+[martin@localhost try_ferret]$ time java -jar ferret.jar -i lazy-sum.clj
+18:17:39 INFO dir => ./
+18:17:39 INFO file => lazy-sum.clj
+18:17:45 INFO compiled => ./lazy-sum.cpp
+18:17:45 INFO formatting code
+
+real	0m7.962s
+user	0m16.296s
+sys	0m0.471s
+#+end_example
+
